@@ -2,13 +2,13 @@ package be.ucll.crafsmanship.template.dataprocessor;
 
 public class Demo {
     public static void main(String[] args) {
-//        DataProcessor csvProcessor = new CSVDataProcessor();
-//        DataProcessor jsonProcessor = new JSONDataProcessor();
-//
-//        System.out.println("\nProcessing CSV Data...");
-//        csvProcessor.processData();
-//
-//        System.out.println("\nProcessing JSON Data...");
-//        jsonProcessor.processData();
+        DataProcessor csvProcessor = new CSVProcessor();
+        DataProcessor jsonProcessor = new JsonProcessor();
+
+        System.out.println("=== Processing CSV Data ===");
+        csvProcessor.process();
+
+        System.out.println("\n=== Processing JSON Data ===");
+        jsonProcessor.process();
     }
 }

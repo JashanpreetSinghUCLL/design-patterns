@@ -1,9 +1,9 @@
 package be.ucll.crafsmanship.command.gamecontroller;
 
-public class CrossButtonCommand implements Command {
+public class JumpCommand implements Command {
     private final Receiver receiver;
 
-    public CrossButtonCommand(Receiver receiver) {
+    public JumpCommand(Receiver receiver) {
         this.receiver = receiver;
     }
 
